@@ -5,9 +5,13 @@
     margin-top: 10px;
   }
 
-// .border{
-//     border: solid 1px white;
-// }
+.active:active{
+    border-bottom: 3px solid white;
+}
+
+.nonActive{
+    border:none;
+}
 
 .border-bottom{
     border-bottom: 3px solid rgba(57, 183, 233, 1);

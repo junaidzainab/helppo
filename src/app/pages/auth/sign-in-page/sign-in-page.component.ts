@@ -14,6 +14,7 @@ export class SignInPageComponent implements OnInit {
   loginForm!: FormGroup;
   logIn = true;
   signin = false;
+  active = true;
 
   // submitForm(): void {
   //   if (this.validateForm.valid) {
@@ -51,7 +52,13 @@ export class SignInPageComponent implements OnInit {
 
   signIn(){
     this.logIn = false;
-    this.signin = true
+    this.signin = true;
+  }
+
+  log(){
+    this.logIn =true;
+    this.signin = false;
+     
   }
 }
 

@@ -8,11 +8,11 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { SignInPageComponent } from './sign-in-page/sign-in-page.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'sign-in',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: '',
+    redirectTo: '/auth/login',
+    pathMatch: 'full',
+  },
   {
     path: '',
     component: AuthComponent,

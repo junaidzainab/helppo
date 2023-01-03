@@ -1,11 +1,11 @@
 <div class="p-10 w-30 m-30">
     <div class="border-bottom">
         <div class="flex-btw-center w-40 font-16 color-white">
-            <div class="p-10">Login</div>
-            <div class="p-10" (click)="signIn()">Sign in</div>
+            <div class="p-10 active" (click)="log()">Login</div>
+            <div class="p-10 active" (click)="signIn()">Sign in</div>
         </div>
     </div>
-    <section class="login" *ngIf="logIn">
+    <section class="" *ngIf="logIn">
         <p class="font-16 color-white p-10">Enter your credentials to access your Account.</p>
         <div>
             <form [formGroup]="loginForm" class="">
@@ -40,7 +40,7 @@
         </section>
     </section>
 
-    <section class="sign-in" *ngIf="signin">
+    <section class="" *ngIf="signin">
         <p class="font-16 color-white p-10">Enter your phone number to create your account.</p>
         <div class="w-100">
             <form [formGroup]="loginForm" class="flex-center gap-20 p-10 ">
@@ -62,7 +62,7 @@
                 </button>
             </div>
                 <div class="flex-btw-center mtb-20">
-                    <div class="font-14 fw-400 color-white">Already have an account?<span class="color-lt-blue pl-20">Login</span></div>
+                    <div class="font-14 fw-400 color-white">Already have an account?<span class="color-lt-blue pl-20" (click)="log()">Login</span></div>
                 </div>
         </section>
     </section>

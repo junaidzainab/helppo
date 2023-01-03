@@ -6,15 +6,15 @@ import { AuthComponent } from './pages/auth/auth.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'main',
+    redirectTo: '/auth/login',
     pathMatch: 'full',
   },
-  { path: '', 
-    loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule) },
   {
     path: 'auth',
     loadChildren: () => import('./pages/auth/auth.module').then((m) => m.AuthModule)
   },
+  { path: 'main', 
+    loadChildren: () => import('./pages/main/main.module').then(m => m.MainModule) },
 ];
 
 @NgModule({
