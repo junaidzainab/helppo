@@ -1,0 +1,34 @@
+.login-button {
+    width: 100%;
+    // padding: 5px;
+    // border-radius: 7px;
+    margin-top: 10px;
+  }
+
+// .border{
+//     border: solid 1px white;
+// }
+
+.border-bottom{
+    border-bottom: 3px solid rgba(57, 183, 233, 1);
+}
+
+.flex-btw-center{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: cent; 
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+
+.input{
+    border:none;
+    // text-decoration: none;
+    // background-color: #fff;
+    // color:#fff;
+    width:450px;
+}

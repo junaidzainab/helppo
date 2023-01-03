@@ -1,0 +1,31 @@
+.clr-blue{
+    background: rgba(35, 48, 100, 1);
+}
+
+.clr-lt-green{
+    background: rgba(57, 183, 233, 1);
+}
+
+.font-16{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  
+  .font-48{
+    font-size: 20px;
+  }
+
+  .slider-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .card{
+    min-width: 25%;
+    padding: 20px;
+    border-radius: 10px;
+    color:#fff;
+  }

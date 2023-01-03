@@ -1,0 +1,42 @@
+<div class="w-30 m-30">
+    <div class="mtb-20">
+        <div class="color-lt-blue font-20 fw-700">We sent you a code</div>
+        <div class="color-white font-16">Enter the 5 digit code sent to your phone number</div>
+    </div>
+<section class="mtb-30">
+    <div>
+        <form [formGroup]="otpForm" class="">
+            <div class="flex-btw-center mtb-10">
+                <!-- <img src="assets/icons/acct-lt.svg" alt=""> -->
+                <input formControlName="otp" class=" bg-white otp-input" type="number" id="otp" name="otp"
+                    placeholder="0">
+                <input formControlName="otp" class=" bg-white otp-input" type="number" id="otp" name="otp"
+                    placeholder="5">
+                <input formControlName="otp" class=" bg-white otp-input" type="number" id="otp" name="otp"
+                    placeholder="8">
+                <input formControlName="otp" class=" bg-white otp-input" type="number" id="otp" name="otp"
+                    placeholder="2">
+
+                <input formControlName="otp" class=" bg-white otp-input" type="number" id="otp" name="otp"
+                    placeholder="1">
+            </div>
+        </form>
+    </div>
+    <section class="">
+        <div class="flex-btw-center mtb-30">
+            <div class="flex-btw-center">
+                <div class="font-14 fw-400 color-lt-blue">Send code again</div>
+            </div>
+            <div class="font-14 color-lt-blue pointer ">Change phone number
+                </div>
+        </div>
+        <div class="mtb-30">
+            <button (click)="verify()" type="submit"
+                class="bg-lt-blue color-white round-25 p-10 font-18 fw-500 w-100 border-0">Verify
+            </button>
+        </div>
+        <div class="flex-btw-center mtb-30">
+            <div class="font-14 fw-400 color-white">Already have an account?<span class="color-lt-blue pl-20" routerLink="/auth/login">Login</span></div>
+        </div>
+    </section>
+</section>
