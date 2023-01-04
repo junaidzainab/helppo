@@ -18,6 +18,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TransationComponent } from './transation/transation.component';
 import { AccountComponent } from './account/account.component';
 import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzTableModule } from 'ng-zorro-antd/table';
+// import {MatFormFieldModule} from '@angular/material/form-field';
+
 
 // registerLocaleData(en);
 
@@ -39,7 +42,9 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
     IconsProviderModule,
     NzLayoutModule,
     NzMenuModule,
-    NzGridModule
+    NzGridModule,
+    NzTableModule,
+    // MatFormFieldModule
   ],
   exports: [MainComponent]
   // providers: [{ provide: NZ_I18N, useValue: en_US }],

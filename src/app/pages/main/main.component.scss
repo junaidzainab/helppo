@@ -5,6 +5,10 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .ant-layout {
+    background: rgb(228, 240, 245) !important
+  }
+  
   .app-layout {
     height: 100vh;
   }
@@ -98,7 +102,7 @@
   }
   
   .inner-content {
-    // padding:/ 24px;
+    padding: 15px;
     // background: #fff;
     height: 100%;
   }

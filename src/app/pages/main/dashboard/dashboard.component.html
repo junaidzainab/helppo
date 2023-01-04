@@ -1,25 +1,71 @@
-<div class="font-16">OVERVIEW</div>
+<div class="fw-700">OVERVIEW</div>
 <div class="slider-container">
     <div class="clr-blue card">
-        <p class="font-16">Wallet Balance</p>
-        <p class="font-48">#0.00</p>
-        <button>Find Wallet</button>
+        <div class="font-20 fw-700">Wallet Balance</div>
+        <div class="font-40 fw-700">₦0.00</div>
+        <button class='bg-orange font-16 btn-wallet border-0'>Find Wallet</button>
     </div>
     <div class="clr-lt-green card">
-        <p class="font-16">Wallet Balance</p>
-        <p>#0.00</p>
-        <button>Find Wallet</button>
+        <div class="font-20 fw-700">Outstanding Payment</div>
+        <div class="font-40 fw-700">₦0.00</div>
+        <div class="font-16">Amount you’re owing</div>
     </div>
     <div class="clr-blue card">
-        <p class="font-16">Wallet Balance</p>
-        <p>#0.00</p>
-        <button>Find Wallet</button>
+        <div class="font-20 fw-700">Expected Payment</div>
+        <div class="font-40 fw-700">₦0.00</div>
+        <div class="font-16">Payments that’ll be made at a later date</div>
     </div>
-    <div>
-        
+</div>
+<div class="ptb-20">
+    <div class="ptb-20 fw-700">QUICK OPTIONS</div>
+    <div nz-row>
+      <div nz-col nzSpan="5" class='border-orange'><img src="./assets/icons/cart1.svg">
+        <div class="fw-700">Helppo BNPL</div>
+        <img src="./assets/icons/arrow1.svg">
     </div>
-    <!-- <span>Horizontal Gutter (px):</span> -->
-    <!-- <div class="slider">
-       <nz-slider [nzMarks]="marksHGutter" [nzStep]="null" [nzMin]="8" [nzMax]="48" [(ngModel)]="hGutter"></nz-slider> -->
-    <!-- </div> -->
+      <div nz-col nzSpan="5" class='border-lt-blue'><img src="./assets/icons/cart2.svg">
+        <div class="fw-700">Helppo pay</div>
+        <img src="./assets/icons/arrow2.svg">
+    </div>
+      <div nz-col nzSpan="5" class='border-orange'><img src="./assets/icons/insure.svg">
+        <div class="fw-700">Helppo Insure</div>
+        <img src="./assets/icons/arrow1.svg">
+    </div>
+      <div nz-col nzSpan="5"  class='border-lt-blue'><img src="./assets/icons/fix.svg">
+        <div class="fw-700">Helppo Fix</div>
+        <img src="./assets/icons/arrow2.svg">
+    </div>
+    </div>
+  </div>
+<div>
+    <div class="fw-700 ptb-20">PENDING REQUESTS</div>
+    <nz-table>
+          <tr>
+            <td>10-10-22</td>
+            <td class="flex-center gap-10"><img src="./assets/icons/error.svg">FHP20221004131217101</td>
+            <td>Awaiting Order Confirmation</td>
+            <td>₦0.00 <a>View details</a>
+            </td>
+          </tr>
+          <tr>
+            <td>10-10-22</td>
+            <td class="flex-center gap-10"><img src="./assets/icons/error.svg">WHP20221004101604</td>
+            <td>Awaiting Payment</td>
+            <td>₦0.00 <a>Make Outright Payment</a>
+            </td>
+          </tr>
+          <tr class="border-lt-blue">
+            <td>10-10-22</td>
+            <td class="flex-center gap-10"><img src="./assets/icons/error.svg">WHP20221004101604</td>
+            <td>Incomplete Application</td>
+            <td>₦0.00 <a>View details</a></td>
+          </tr>
+          <tr>
+            <td>10-10-22</td>
+            <td class="flex-center gap-10"><img src="./assets/icons/error.svg">FIX92176720221004131304
+                Iphone 6s</td>
+            <td>Awaiting Estimation Of Repair</td>
+            <td>₦0.00 <a>View details</a></td>
+          </tr>
+      </nz-table>
 </div>
